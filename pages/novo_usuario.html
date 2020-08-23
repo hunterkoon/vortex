@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="UTF-8">
+
+<head>
+    <script type='text/javascript' src="..\javascript\cadastro.js"></script> 
+    <link rel="stylesheet" type="text/css" href="..\css\Style.css">
+    <Title> Vortex </Title>
+</head>
+<header>
+    <div id="menu">
+        <img src="..\images\Logotipo_Fundo.png" class="Logo">
+        <a href="#home"> Vortex </a>
+        <a href=""> What? </a>
+    </div>
+</header>
+
+<Body>
+    <div class="formulariocadastro">
+        <h1> Preencha os dados abaixo</h1>
+
+        <form>
+            <label>Nome de Usuario </label> <br>
+            <input type="text" id="nomeusuario" value=""><br>
+            <label>Email</label> <br>
+            <input type="text" id="email" value=""><br>
+            <label>Senha</label><br>
+            <input type="password" id="pass" value=""><br>
+            <label>Confirme a senha</label><br>
+            <input type="password" id="pass2" value=""><br>
+            <input type="button" id="envbotao" onclick= cadastro()  value="enviar">
+            
+        </form>
+    </div>
+</Body>
+<footer>
+    <p> Direitos Reservados @ 2020 </p>
+</footer>
+
+</html>
