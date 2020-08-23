@@ -15,13 +15,19 @@ function cadastro() {
 
     function checkPass() {
         if (check1 != check2 || check1 === '' && check2 === '') {
-            console.log("senhas diferentes");
+            alert("Senhas não conferem ou nulas");
             return false;
 
         } else (check1 === check2)
              console.log("senhas iguais");
     }
 
-    checkPass();
+    function checkfield() {
+        if (registrousuario== '' || registroemail==''){
+            alert("Preencha todos os Campos")
+        } else console.log('campos preenchidos')
+    }
+
+    checkPass(); checkfield();
 
 }
