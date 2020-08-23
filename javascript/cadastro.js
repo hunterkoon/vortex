@@ -13,6 +13,15 @@ function cadastro() {
     check.pass1 = check1;
     check.pass2 = check2;
 
+    function checkPass() {
+        if (check1 != check2 || check1 === '' && check2 === '') {
+            console.log("senhas diferentes");
+            return false;
 
+        } else (check1 === check2)
+             console.log("senhas iguais");
+    }
+
+    checkPass();
 
 }
