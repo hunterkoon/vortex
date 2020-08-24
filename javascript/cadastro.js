@@ -32,9 +32,13 @@ function cadastro() {
 
 }
 
+// torna o email digitado caracteres maiusculos
+
 function maiuscula () {
     var maiuscula = document.getElementById("email");
     maiuscula.value = maiuscula.value.toUpperCase();
+    
+// checa o e-mail digitado, se possue @ e pontuação
 
     function checaremail() {
 
