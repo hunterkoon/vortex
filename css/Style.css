@@ -96,12 +96,26 @@ footer p {
 
 } 
 .formulariocadastro {
-    margin-left: 20px; 
-    background-color:#8864BC ;
-    color: #fff;
-    width: 300px;
+    margin-top: 200px;
+    padding-left: 60px;
+    color: gray;
+    width: 500px;
 }
 .formulariocadastro h1 {
-    color: #fff;
+    color:gray;
 }
 
+.botaoenviar {
+
+display: block;
+color: grey;
+width: 100px;
+margin-top: 25px;
+text-justify: auto;
+text-align: center;
+
+}
+
+.senhapotencial{
+    display: absolute;
+}

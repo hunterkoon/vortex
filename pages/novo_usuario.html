@@ -3,7 +3,8 @@
 <meta charset="UTF-8">
 
 <head>
-    <script type='text/javascript' src="..\javascript\cadastro.js"></script> 
+    <script type='text/javascript' src="..\javascript\cadastro.js"></script>
+    <script type='text/javascript' src="..\javascript\js.js"></script>  
     <link rel="stylesheet" type="text/css" href="..\css\Style.css">
     <Title> Vortex </Title>
 </head>
@@ -19,18 +20,19 @@
     <div class="formulariocadastro">
         <h1> Preencha os dados abaixo</h1>
 
-        <form>
+        <form method = "POST" id="cadastroform" onsubmit="return (alertemail())">
             <label>Nome de Usuario </label> <br>
             <input type="text" id="nomeusuario" value=""><br>
             <label>Email</label> <br>
-            <input type="text" id="email" value=""><br>
+            <input name="email" type="text" onblur="maiuscula()" id="email" value=""><br>
             <label>Senha</label><br>
-            <input type="password" id="pass" value=""><br>
+            <input type="password" id="pass" onblur="checarsenha()" value=""><br>
             <label>Confirme a senha</label><br>
             <input type="password" id="pass2" value=""><br>
-            <input type="button" id="envbotao" onclick= cadastro()  value="enviar">
+            <input type="button" class ="botaoenviar"id="envbotao" onclick= "cadastro()"  value="enviar">
             
         </form>
+        <div class=senhapotencial> <p id="textpassword"></p> </div>
     </div>
 </Body>
 <footer>
